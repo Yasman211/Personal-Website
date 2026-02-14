@@ -82,7 +82,7 @@ a {
     }
  /* portfolio page */
 /* ========== TOP-RIGHT BUTTON ========== */
-.top-right-button {
+.top-right {
     position: absolute;   /* positions relative to the page */
     top: 20px;            /* distance from top */
     right: 20px;          /* distance from right edge — ensures it is on the right */
