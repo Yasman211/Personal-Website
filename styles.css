@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #500202; /* dark background */
-    color: #ffffff; /* white text */
+    color: #140101; /* white text */
     margin: 0;
     padding: 20px;
     max-width: 900px;
@@ -21,7 +21,7 @@ section {
 
 /* Buttons */
 button {
-    background-color: #ff2e2e; /* dark red button */
+    background-color: #8e0000; /* dark red button */
     color: #ffffff;
     border: none;
     padding: 12px 25px;
@@ -32,12 +32,12 @@ button {
 }
 
 button:hover {
-    background-color: #ff1a1a; /* brighter red on hover */
+    background-color:#8e0000; /* brighter red on hover */
     transform: scale(1.05);
 }
 
 button:active {
-    background-color: #cc0000; /* darker red on click */
+    background-color: #8e0000; /* darker red on click */
     transform: scale(0.95);
 }
 
