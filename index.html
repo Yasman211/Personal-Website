@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +12,34 @@
     <!-- EmailJS library -->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init("FLvH5gv93EbyBxyJ4"); // Your public key
         })();
     </script>
 </head>
-<body>
 
+<body>
+     
+    <span class="top-right">
+        Portfolio
+    </span>
     <h1 id="header">Yasir Bello</h1>
     <h3>Hi,</h3>
 
     <section>
-        I’m Yasir, a driven and curious individual who has always been fascinated by how technology can transform ideas into reality. From a young age, I found myself captivated by computers—not just as tools, but as gateways to solving real problems, creating solutions, and building things that didn’t exist before. While most people see programming as lines of code, I see it as a language of possibility—a way to take imagination and turn it into something tangible that can impact the world.
+        My name is Yasir Bello, I am a driven and curious individual. Over the past few weeks i wafascinated by how technology can transform ideas
+        into reality. From a young age, I found myself captivated by computers—not just as tools, but as gateways to
+        solving real problems, creating solutions, and building things that didn’t exist before. While most people see
+        programming as lines of code, I see it as a language of possibility—a way to take imagination and turn it into
+        something tangible that can impact the world.
     </section>
 
     <section>
-        My interest in computer programming is rooted in a bigger goal: I want to create solutions that make life easier, more efficient, and more accessible for everyone. I’ve always been drawn to challenges, and programming allows me to break down complex problems into smaller, manageable parts. It teaches me patience, logical thinking, and creativity all at once. Every project, every line of code, and every problem I solve brings me closer to understanding how technology can be harnessed to achieve bigger visions.
+        My interest in computer programming is rooted in a bigger goal: I want to create solutions that make life
+        easier, more efficient, and more accessible for everyone. I’ve always been drawn to challenges, and programming
+        allows me to break down complex problems into smaller, manageable parts. It teaches me patience, logical
+        thinking, and creativity all at once. Every project, every line of code, and every problem I solve brings me
+        closer to understanding how technology can be harnessed to achieve bigger visions.
     </section>
 
     <section>
@@ -57,13 +70,13 @@
     </section>
 
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
 
             emailjs.sendForm('service_cfol784', 'template_bu8wb2u', this)
-                .then(function() {
+                .then(function () {
                     alert('Message sent successfully!');
-                }, function(error) {
+                }, function (error) {
                     alert('Oops… something went wrong. Please try again.');
                     console.log(error);
                 });
@@ -71,4 +84,5 @@
     </script>
 
 </body>
+
 </html>
