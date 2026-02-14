@@ -82,7 +82,7 @@ a {
     }
 /* ========== TOP-RIGHT BUTTON (ALTERNATIVE STYLE) ========== */
 .top-right {
-    position: fixed;        /* stays visible while scrolling */
+    position: relative;        /* stays visible while scrolling */
     inset: 20px auto auto 0; /* top:20px, right:auto, bottom:auto, left:0 (we'll override right next) */
     right: 20px;            /* push it from the right edge */
     padding: 12px 24px;
