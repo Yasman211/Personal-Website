@@ -80,29 +80,38 @@ a {
         width: 100%;
         margin-bottom: 10px;
     }
- /* portfolio page */
-/* ========== TOP-RIGHT BUTTON ========== */
+/* ========== TOP-RIGHT BUTTON (ALTERNATIVE STYLE) ========== */
 .top-right {
-    position: absolute;   /* positions relative to the page */
-    top: 20px;            /* distance from top */
-    left: 20px;          /* distance from right edge — ensures it is on the right */
-    padding: 10px 20px;
-    background-color: #000000;
+    position: fixed;        /* stays visible while scrolling */
+    inset: 20px auto auto 0; /* top:20px, right:auto, bottom:auto, left:0 (we'll override right next) */
+    right: 20px;            /* push it from the right edge */
+    padding: 12px 24px;
+    background-color: #1a0000; /* dark red/black theme */
     color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border: 2px solid #ff0000; /* optional red border for style */
+    border-radius: 8px;
     font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    transition: all 0.25s ease-in-out;
+    z-index: 1000;          /* ensures it’s on top of other elements */
 }
 
-.top-right-button:hover {
-    background-color: #ff0000;
-    transform: translateY(-2px);
+/* Hover effect */
+.top-right:hover {
+    background-color: #ff0000;   /* bright red */
+    color: #000000;              /* text turns black */
+    transform: scale(1.05);      /* slight grow effect */
+    box-shadow: 0 6px 12px rgba(255,0,0,0.6);
 }
 
-
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .top-right {
+        padding: 10px 18px;
+        font-size: 14px;
+        right: 10px;
+        top: 10px;
+    }
 }
-
-    
-
