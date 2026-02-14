@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasir Bello Short Resume</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- EmailJS library -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("FLvH5gv93EbyBxyJ4"); // Your public key
+        })();
+    </script>
+</head>
+<body>
+
+    <h1 id="header">Yasir Bello</h1>
+    <h3>Hi,</h3>
+
+    <section>
+        I’m Yasir, a driven and curious individual who has always been fascinated by how technology can transform ideas into reality. From a young age, I found myself captivated by computers—not just as tools, but as gateways to solving real problems, creating solutions, and building things that didn’t exist before. While most people see programming as lines of code, I see it as a language of possibility—a way to take imagination and turn it into something tangible that can impact the world.
+    </section>
+
+    <section>
+        My interest in computer programming is rooted in a bigger goal: I want to create solutions that make life easier, more efficient, and more accessible for everyone. I’ve always been drawn to challenges, and programming allows me to break down complex problems into smaller, manageable parts. It teaches me patience, logical thinking, and creativity all at once. Every project, every line of code, and every problem I solve brings me closer to understanding how technology can be harnessed to achieve bigger visions.
+    </section>
+
+    <section>
+        Click the buttons ↓ to see all my playlists
+        <br><br>
+        <a href="https://www.youtube.com/playlist?list=WL" target="_blank">
+            <button>My Youtube Playlist</button>
+        </a>
+        <a href="https://open.spotify.com/playlist/2lIQkgHftGlhvif9VIdOez?si=a159e0d8c7c140ef" target="_blank">
+            <button>My Spotify Playlist</button>
+        </a>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="What's your name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <label>Message:</label>
+            <textarea name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_cfol784', 'template_bu8wb2u', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('Oops… something went wrong. Please try again.');
+                    console.log(error);
+                });
+        });
+    </script>
+
+</body>
+</html>
