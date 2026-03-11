@@ -21,7 +21,7 @@ section {
 
 /* Buttons */
 button {
-    background-color: #8e0000; /* dark red button */
+    background-color: #279AF1; /* dark red button */
     color: #ffffff;
     border: none;
     padding: 12px 25px;
@@ -32,12 +32,12 @@ button {
 }
 
 button:hover {
-    background-color:#8e0000; /* brighter red on hover */
+    background-color:#279AF1; /* brighter red on hover */
     transform: scale(1.05);
 }
 
 button:active {
-    background-color: #8e0000; /* darker red on click */
+    background-color: #279AF1; /* darker red on click */
     transform: scale(0.95);
 }
 
