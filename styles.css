@@ -12,7 +12,7 @@ h1, h3 {
     text-align: left;
     margin: 0;
     padding: 0;
-    color: #ff2e2e; /* dark red for name and hi */
+    color: #279AF1; /* dark red for name and hi */
 }
 
 section {
@@ -50,12 +50,12 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid #ff2e2e;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #279AF1;
     color: #ffffff;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #ff9999;
+    color: #279AF1;
 }
 
 /* Form styling */
@@ -63,7 +63,7 @@ form {
     background-color: #111111; /* dark form background */
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ff2e2e;
+    border: 1px solid #279AF1;
 }
 
 a {
