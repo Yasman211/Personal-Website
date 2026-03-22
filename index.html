@@ -1,95 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yasir Bello Short Resume</title>
 
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- EmailJS library -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("FLvH5gv93EbyBxyJ4"); // Your public key
-        })();
+      (function () {
+        emailjs.init("FLvH5gv93EbyBxyJ4"); // Your public key
+      })();
     </script>
-</head>
+  </head>
 
-<body>
-     
-  
+  <body>
     <h1 id="header">Yasir Bello</h1>
     <h3>Hi,</h3>
 
+    <p>
+      I'm a software developer with a passion for learning and sharing
+      knowledge. I have experience in various programming languages and
+      frameworks, and I'm always eager to explore new technologies. This website
+      serves as a platform for me to document my learning journey, share my
+      projects, and connect with like-minded individuals.
+    </p>
+
+    <p>
+      I believe in the power of community and collaboration, and I'm always open
+      to feedback and suggestions. Feel free to reach out to me through the
+      contact form below or connect with me on my social media platforms. I wish
+      to use this platform to inspire and be inspired by others in the tech
+      community. Let's learn and grow together!
+    </p>
+
     <section>
-        HI, my name is Yasir Bello. I am a driven and curious individual. Over the past few weeks, I have developed a fascination with how technology can transform ideas
-        into reality. I have recently found myself to be captivated by computers, not just as tools, but as gateways to
-        solving real problems, creating solutions, and building things that didn’t exist before. I look forward to the arduous journey ahead as I learn to take my imagination and turn it into
-        something tangible that can impact the world.
+      Click the buttons ↓ to see all my playlists
+      <br /><br />
+      <a href="https://www.youtube.com/playlist?list=WL" target="_blank">
+        <button>My Youtube Playlist</button>
+      </a>
+      <a
+        href="https://open.spotify.com/playlist/2lIQkgHftGlhvif9VIdOez?si=a159e0d8c7c140ef"
+        target="_blank"
+      >
+        <button>My Spotify Playlist</button>
+      </a>
     </section>
 
     <section>
-        The main purpose of this website is to document my journey in a public but discreet way. I want it to be public but not known, compared to social media. While giving. I want it to be a public show of my growth without having any potential of going public overnight.
-    </section>
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label>Name:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="What's your name"
+          required
+        />
 
-    <section>
-        Click the buttons ↓ to see all my playlists
-        <br><br>
-        <a href="https://www.youtube.com/playlist?list=WL" target="_blank">
-            <button>My Youtube Playlist</button>
-        </a>
-        <a href="https://open.spotify.com/playlist/2lIQkgHftGlhvif9VIdOez?si=a159e0d8c7c140ef" target="_blank">
-            <button>My Spotify Playlist</button>
-        </a>
-    </section>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Your Email" required />
 
-    <section>
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label>Name:</label>
-            <input type="text" name="name" placeholder="What's your name" required>
+        <label>Message:</label>
+        <textarea name="message" placeholder="Your message" required></textarea>
 
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="Your Email" required>
-
-            <label>Message:</label>
-            <textarea name="message" placeholder="Your message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
-            emailjs.sendForm('service_cfol784', 'template_bu8wb2u', this)
-                .then(function () {
-                    alert('Message sent successfully!');
-                }, function (error) {
-                    alert('Oops… something went wrong. Please try again.');
-                    console.log(error);
-                });
+          emailjs.sendForm("service_cfol784", "template_bu8wb2u", this).then(
+            function () {
+              alert("Message sent successfully!");
+            },
+            function (error) {
+              alert("Oops… something went wrong. Please try again.");
+              console.log(error);
+            },
+          );
         });
     </script>
 
     <section>
-        <span class="top-right">
-         <a target="_self" href="portfolio.html">
-            <button>Portfolio</button>
-         </a>
-       </span>
-       <span class="top-right">
-         <a target="_self" href="socials.html">
-             <button>Socials</button>
-         </a>
-       </span>
-         
+      <span class="top-right">
+        <a target="_self" href="portfolio.html">
+          <button>Portfolio</button>
+        </a>
+      </span>
+      <span class="top-right">
+        <a target="_self" href="socials.html">
+          <button>Socials</button>
+        </a>
+      </span>
     </section>
-
-</body>
-
+  </body>
 </html>
